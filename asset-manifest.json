@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/BuuDien/swisshotel.git/static/css/main.4cc3bbd7.css",
+    "main.js": "/BuuDien/swisshotel.git/static/js/main.82115ef5.js",
+    "static/media/Home__backgroungimg.png": "/BuuDien/swisshotel.git/static/media/Home__backgroungimg.7546a91432acb20cff49.png",
+    "index.html": "/BuuDien/swisshotel.git/index.html",
+    "main.4cc3bbd7.css.map": "/BuuDien/swisshotel.git/static/css/main.4cc3bbd7.css.map",
+    "main.82115ef5.js.map": "/BuuDien/swisshotel.git/static/js/main.82115ef5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4cc3bbd7.css",
+    "static/js/main.82115ef5.js"
+  ]
+}
