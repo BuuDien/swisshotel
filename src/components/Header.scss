@@ -1,0 +1,98 @@
+@import './../styles/_variables';
+@import './../styles/mixin';
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 1234px;
+  background-image: url(./../images/Home__backgroungimg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  &__nav {
+    width: 100%;
+    position: fixed;
+    background-color: $dark-blue;
+    z-index: 1000;
+
+    &__content {
+      font-weight: 500;
+      padding: 20px 0;
+
+      &__items {
+        font-size: 1.4vw;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 20px;
+
+        @include maxWidth(1200px) {
+          font-size: 18px;
+        }
+        &-link {
+          color: $yellow;
+
+          &::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: $yellow;
+            display: block;
+            margin-top: 0;
+            transition: 0.5s;
+          }
+
+          &:hover::after {
+            width: 100%;
+            margin-top: 5px;
+          }
+        }
+
+        &__logo {
+          width: 12vw;
+          height: auto;
+          margin: 0 40px;
+          @include maxWidth(1200px) {
+            width: 180px;
+          }
+        }
+      }
+    }
+
+    &__toggle {
+      display: none;
+      @include maxWidth(768px) {
+      }
+    }
+  }
+
+  &__slogan {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 15vw;
+    left: 7.5vw;
+
+    &__title {
+      font-size: 2.5vw;
+      font-weight: 600;
+      letter-spacing: 15%;
+    }
+
+    &__description {
+      width: 27vw;
+      font-size: 1.3vw;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 1.2vw;
+      line-height: 1.7vw;
+    }
+  }
+}
